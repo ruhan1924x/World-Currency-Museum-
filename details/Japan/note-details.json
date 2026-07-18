@@ -1,0 +1,58 @@
+[
+  {
+    "id": "jp-1000yen-2026",
+    "series": "2025-2026",
+    "country": "Japan",
+    "value": "1000 yen",
+    "issueDate": "3 July 2024",
+    "governor": "Kazuo Ueda",
+    "person": "Shibasaburo Kitasato",
+    "material": "Paper",
+    "dimensions": "150×76 mm",
+    "history": "The redesigned ¥1,000 banknote entered circulation on 3 July 2024 as part of Japan's new banknote series. It features Dr. Shibasaburo Kitasato, a pioneer in modern bacteriology, on the front. The reverse displays Katsushika Hokusai's famous artwork 'The Great Wave off Kanagawa'. The note incorporates advanced anti-counterfeiting technologies while maintaining compatibility with existing Japanese currency.",
+    "economy": "The ¥1,000 note is Japan's most commonly used banknote for everyday transactions. It supports cash payments across retail stores, transportation, vending machines, and small businesses, despite Japan's growing adoption of digital payments.",
+    "security": "3D hologram portrait, watermark, latent image, microprinting, tactile marks for visually impaired users, fluorescent ink, pearl ink, and high-precision intaglio printing."
+  },
+  {
+    "id": "jp-2000yen-2026",
+    "series": "2025-2026",
+    "country": "Japan",
+    "value": "2000 yen",
+    "issueDate": "19 July 2000",
+    "governor": "Kazuo Ueda",
+    "person": "Shureimon Gate (Front), Murasaki Shikibu (Hidden Portrait)",
+    "material": "Paper",
+    "dimensions": "154×76 mm",
+    "history": "The ¥2,000 banknote was introduced in 2000 to commemorate the G8 Summit held in Okinawa and the beginning of the 21st century. Although it remains legal tender, it is printed in limited quantities and is rarely seen in daily circulation. The front features Shureimon Gate in Okinawa, while the reverse depicts a scene from The Tale of Genji along with a portrait of Murasaki Shikibu.",
+    "economy": "The ¥2,000 note plays only a minor role in Japan's economy today. Most transactions rely on the ¥1,000, ¥5,000, and ¥10,000 denominations, making the ¥2,000 note more of a collector's item than a commonly used banknote.",
+    "security": "Watermark, security thread, latent image, microprinting, fluorescent ink, intaglio printing, and anti-counterfeiting security features."
+  },
+  {
+    "id": "jp-5000yen-2026",
+    "series": "2025-2026",
+    "country": "Japan",
+    "value": "5000 yen",
+    "issueDate": "3 July 2024",
+    "governor": "Kazuo Ueda",
+    "person": "Umeko Tsuda",
+    "material": "Paper",
+    "dimensions": "156×76 mm",
+    "history": "The redesigned ¥5,000 banknote entered circulation on 3 July 2024. It honors Umeko Tsuda, a pioneer of women's education in Japan and founder of Tsuda University. The reverse features wisteria flowers, symbolizing elegance and cultural heritage. The banknote includes Japan's latest anti-counterfeiting technologies.",
+    "economy": "The ¥5,000 note is commonly used for shopping, dining, travel, and ATM withdrawals. It represents a mid-value denomination widely accepted throughout Japan.",
+    "security": "3D hologram portrait, watermark, microprinting, tactile marks, fluorescent ink, latent image, pearl ink, and advanced intaglio printing."
+  },
+  {
+    "id": "jp-10000yen-2026",
+    "series": "2025-2026",
+    "country": "Japan",
+    "value": "10000 yen",
+    "issueDate": "3 July 2024",
+    "governor": "Kazuo Ueda",
+    "person": "Eiichi Shibusawa",
+    "material": "Paper",
+    "dimensions": "160×76 mm",
+    "history": "The redesigned ¥10,000 banknote entered circulation on 3 July 2024. It features Eiichi Shibusawa, widely regarded as the 'Father of Japanese Capitalism' for helping establish hundreds of modern companies and financial institutions. The reverse depicts Tokyo Station's Marunouchi Building, one of Japan's most iconic railway terminals.",
+    "economy": "The ¥10,000 note is Japan's highest-value regularly circulating banknote. It is widely used for salaries, savings, major purchases, and ATM withdrawals, making it one of the most important denominations in the Japanese economy.",
+    "security": "3D hologram portrait, watermark, latent image, microprinting, tactile printing, fluorescent ink, pearl ink, security thread, and sophisticated anti-counterfeiting technology."
+  }
+]

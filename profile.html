@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <style>
+      *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    padding: 40px 0;
+
+    background:#08121f;
+
+
+}
+
+/* Background */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+
+    filter:blur(4px);
+
+    transform:scale(1.05);
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(5,15,30,.75);
+
+}
+
+/* Card */
+
+.profile-card{
+
+    position:relative;
+
+    z-index:10;
+
+    width:380px;
+
+    max-width:92%;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.45);
+
+    color:white;
+
+    margin: 20px 0;
+
+}
+
+/* Avatar */
+
+#avatar{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #FFD54F;
+
+    margin-bottom:20px;
+
+}
+
+/* Name */
+
+#name{
+
+    font-size:28px;
+
+    color:#FFD54F;
+
+    margin-bottom:8px;
+
+}
+
+/* Email */
+
+#email{
+
+    color:#ddd;
+
+    margin-bottom:30px;
+
+    word-break:break-word;
+
+}
+
+/* Button */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background: black;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background: gray;
+
+    transform:translateY(-2px);
+
+}
+
+.dashboard{
+
+    margin:25px 0;
+
+    display:grid;
+
+    gap:18px;
+
+}
+
+.card{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.14);
+
+}
+
+.card span{
+
+    font-size:34px;
+
+    display:block;
+
+    margin-bottom:10px;
+
+}
+
+.card h3{
+
+    color:#FFD54F;
+
+    margin-bottom:6px;
+
+}
+
+.card p{
+
+    color:#ddd;
+
+    font-size:14px;
+
+}
+
+.disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <img
+            id="avatar"
+            src=""
+            alt="Profile">
+
+        <h2 id="name">
+
+            Loading...
+
+        </h2>
+
+        <p id="email">
+
+            Loading...
+
+        </p>
+        <div class="dashboard">
+
+        <a href="my-collection.html" class="card">
+
+            <span>📚</span>
+
+            <h3>My Collection</h3>
+
+            <p>Your uploaded banknotes</p>
+
+        </a>
+
+        <a href="favorites.html" class="card">
+
+            <span>❤️</span>
+
+            <h3>Favorites</h3>
+
+            <p>Saved banknotes</p>
+
+        </a>
+        <a href="index.html" class="card">
+          <span>🏠</span>
+          <h3>Home</h3>
+          <p>Go to home page</p>
+        </a>
+
+        <div class="card disabled">
+
+            <span>⚙️</span>
+
+            <h3>Settings</h3>
+
+            <p>Coming Soon</p>
+
+        </div>
+
+    </div>
+
+
+        <button onclick="logout()">
+
+            Logout
+
+        </button>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="supabase.js"></script>
+
+    <script src="profile.js"></script>
+
+    
+
+</body>
+
+</html>

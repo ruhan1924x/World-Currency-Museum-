@@ -1,0 +1,221 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Favorites</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+
+    --bg:#0f0f0f;
+
+    --card:#1A1A1A;
+
+    --gold:#C8A54B;
+
+    --gold-light:#E7C56B;
+
+    --text:#F5F5F5;
+
+    --border:rgba(200,165,75,.25);
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Inter',sans-serif;
+
+}
+
+body{
+
+    background:
+    linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.82)),
+    url("images/world-map.svg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    color:var(--text);
+
+    padding:40px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-family:'Cinzel',serif;
+
+    color:var(--gold);
+
+    margin-bottom:40px;
+
+    letter-spacing:3px;
+
+}
+
+#favoritesList{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.favorite-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.favorite-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+.favorite-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:12px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.favorite-card p{
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+}
+
+.favorite-card button{
+
+    background:var(--gold);
+
+    color:#111;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.favorite-card button:hover{
+
+    background:var(--gold-light);
+
+}
+
+.empty{
+
+    text-align:center;
+
+    font-size:24px;
+
+    margin-top:120px;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>❤️ Favorite Notes</h1>
+
+<p style="text-align:center;color:#bbb;margin-top:-20px;margin-bottom:40px;">
+
+Your personal currency collection
+
+</p>
+
+</header>
+
+<div id="favoritesList"></div>
+
+
+<script src="favorites.js"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

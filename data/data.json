@@ -1,0 +1,159 @@
+[
+  {
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "currency": "Yen",
+    "capital": "Tokyo",
+    "map":"images/map/japan.svg",
+    "largestNote": "¥10,000",
+    "history": "The Japanese yen was introduced in 1871 as part of the modernization of Japan's monetary system during the Meiji era.",
+    
+    
+    "banknotes": [
+    {
+      "value": "¥1000",
+      "image": "images/japan/1000yen.jpg"
+    },
+    {
+      "value": "¥2000",
+      "image": "images/japan/2000yen.jpg"
+    },
+    {
+      "value": "¥5000",
+      "image": "images/japan/5000yen.jpg"
+    },
+    {
+      "value": "¥10000",
+      "image": "images/japan/10000yen.jpg"
+    }
+  ],
+    
+  
+
+  "coins": [
+    {
+      "value": "¥1",
+      "image": "images/japan/1yen.jpg"
+    },
+    {
+      "value": "¥5",
+      "image": "images/japan/5yen.jpg"
+    },
+    {
+      "value": "¥10",
+      "image": "images/japan/10yen.jpg"
+    },
+    {
+      "value": "¥50",
+      "image": "images/japan/50yen.jpg"
+    },
+    {
+      "value": "¥100",
+      "image": "images/japan/100yen.jpg"
+    },
+    {
+      "value": "¥500",
+      "image": "images/japan/500yen.jpg"
+    }
+  ]
+  },
+  {
+    "country": "United States",
+    "flag": "🇺🇸",
+    "currency": "US Dollar",
+    "capital": "Washington, D.C.",
+    "map":"images/map/usa.svg",
+    "largestNote": "$100",
+    "history": "The United States dollar became the official currency of the United States under the Coinage Act of 1792 and is one of the world's most widely used currencies.",
+
+    "banknotes": [
+    {
+      "value": "$1",
+      "image": "images/unitedstate/1dollar.jpg"
+    },
+    {
+      "value": "$2",
+      "image": "images/japan/2000yen.jpg"
+    },
+    {
+      "value": "$5",
+      "image": "images/japan/5000yen.jpg"
+    },
+    {
+      "value": "$10",
+      "image": "images/japan/10000yen.jpg"
+
+    },
+    {
+      "value":"$20"
+
+    },
+    {
+      "value":"$50"
+    },
+    {
+      "value":"$100"
+    }
+  ]
+  },
+  {
+    "country": "China",
+    "flag": "🇨🇳",
+    "currency": "Renminbi (Yuan)",
+    "capital": "Beijing",
+    "largestNote": "¥100",
+    "history": "The modern renminbi was introduced in 1948 by the People's Bank of China shortly before the founding of the People's Republic of China."
+  },
+  {
+    "country":"Bangladesh",
+    "flag":"images/flags/bangladesh.jpg",
+    "currency":"Taka",
+    "capital": "Dhaka",
+    "map":"images/map/bangladesh.svg",
+    "largestNote": " ৳1000",
+    "history":"The history of the Bangladeshi Taka is closely linked to the history of Bangladesh. Although Bangladesh gained independence in 1971, the official Bangladeshi Taka (BDT) was introduced in 1972, replacing the Pakistani Rupee. The word 'Taka' itself has been used in Bengal for over 700 years, dating back to the Bengal Sultanate. Today, the Taka is more than just a currency—it symbolizes Bangladesh's independence, national identity, economic progress, and rich cultural heritage. Every banknote reflects the nation's history, landmarks, and traditions.",
+    "banknotes":[
+      {
+      "value": "৳5",
+      "image": "images/bangladesh/5taka.jpg"
+    },
+    {
+      "value": "৳10",
+      "image": "images/bangladesh/10taka.jpg"
+    },
+    {
+      "value": "৳20",
+      "image": "images/bangladesh/20taka.jpg"
+    },
+    {
+      "value": "৳50",
+      "image": "images/bangladesh/50taka.jpg"
+
+    },
+    {
+      "value":"৳100",
+      "image":"images/bangladesh/100taka.jpg"
+
+    },
+    {
+      "value":"৳500",
+      "image":"images/bangladesh/500taka.jpg"
+    },
+    {
+      "value":"৳1000",
+      "image":"images/bangladesh/1000taka.jpg"
+    }
+    ],
+    "coins":[
+      
+    ]
+  },
+  {"country":"Argentina",
+    "flag":"🇦🇷",
+    "currency":"Peso",
+    "capital": "🇦🇷",
+    "largestNote": " $20000"
+
+  }
+ 
+]

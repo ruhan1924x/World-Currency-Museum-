@@ -1,0 +1,45 @@
+[
+  {
+    "country": "Bangladesh",
+    "series": [
+      {
+        "id": "2025",
+        "name": "2025–2026 Series",
+        "current": true
+      },
+      {
+        "id": "2020",
+        "name": "2020 Series"
+      },
+      {
+        "id": "2011",
+        "name": "2011 Series"
+      },
+      {
+        "id": "2000",
+        "name": "2000 Series"
+      },
+      {
+        "id": "1972",
+        "name": "1972 First Series"
+      }
+    ]
+  },
+  {
+    "country": "Japan",
+    "series": [
+      {
+        "id": "2024",
+        "name": "2024 Series"
+      },
+      {
+        "id": "2004",
+        "name": "2004 Series"
+      },
+      {
+        "id": "1984",
+        "name": "1984 Series"
+      }
+    ]
+  }
+]

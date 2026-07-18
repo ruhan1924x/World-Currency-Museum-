@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>World Currency Museum</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+    :root{
+    --bg:#0f0f0f;
+
+    --card:#1A1A1A;
+
+    --card-hover:#252525;
+
+    --gold:#C8A54B;
+
+    --gold-light:#E7C56B;
+
+    --text:#F5F5F5;
+
+    --secondary:#BFBFBF;
+
+    --border:rgba(200,165,75,.25);
+
+    --shadow:0 12px 25px rgba(0,0,0,.35);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter' sans-serif;
+    transition: .25s ease;
+}
+
+body{
+    min-height:100vh;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+
+    background-size:cover;
+    background-position:center;
+    color:var(--text);
+    box-shadow: var(--shadow);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+header{
+    text-align:center;
+    padding:20px;
+}
+h1,h2,h3{
+    font-family: 'Cinzel',serif;
+}
+
+header h1{
+    font-size:40px;
+}
+header::after{
+    content: "";
+    display: block;
+    width: 180px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+.search-box{
+    text-align:center;
+    margin-top:40px;
+}
+
+.search-box input{
+    width:420px;
+    max-width: 90%;
+    padding:17px;
+    font-size: 17px;
+    border:none;
+    border-radius:5px;
+    background: #1b1b1b;
+    color: white;
+    border: 1px solid var(--border);
+}
+
+.search-box button{
+    padding:17px 25px;
+    font-size: 16px;
+    border:none;
+    background:var(--gold);
+    color:#111;
+    font-weight: 600;
+    cursor:pointer;
+    border-radius:5px;
+    
+}
+.search-box button :hover{
+    background: var(--gold-light);
+    transform: translateY(-2px);
+}
+.search-box :active{
+    opacity: 0.1s;
+}
+.search-box input :focus{
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 10px rgba(200,165,75,.3);
+}
+
+/* Cards */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:var(--card);
+    padding:30px;
+    border: 1px solid rgba(200,165,75,.18);
+    box-shadow: var(--shadow);
+    border-radius:22px;
+    width:220px;
+    text-align:center;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background: var(--card-hover);
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 20px 40px rgba(0, 0,0,.45);
+    transition:0.3s;
+    cursor:pointer;
+}
+.card h3{
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    font-size: 22px;
+    color: var(--gold);
+}
+
+.card p{
+    font-size: 18px;
+}
+.flag{
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.currency{
+    color:var(--secondary);
+    margin-top:8px;
+    min-height:4px;
+}
+
+.divider{
+    width:70%;
+    height:1px;
+    background:var(--border);
+    margin:20px auto;
+}
+
+.explore{
+    color:var(--gold);
+    font-weight:600;
+    letter-spacing: 1px;
+}
+
+.menu{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+    padding: 8px;
+    border-radius: 10px;
+}
+.menu-btn:hover{
+    background: rgba(255,255,255,.08);
+}
+
+.menu-list{
+    position:absolute;
+    right:0;
+    top:45px;
+
+    background:var(--card);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(15px);
+
+    border-radius:10px;
+
+    min-width:180px;
+
+    overflow:hidden;
+}
+
+.menu-list a{
+    display:block;
+
+    padding:12px;
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.menu-list a:hover{
+    background:#333;
+}
+
+.hidden{
+    display:none;
+}
+
+.footer{
+
+    margin-top:80px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border-top:2px solid rgba(255,255,0,.35);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.footer h2{
+
+    color:gold;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.footer p{
+
+    color:#cfcfcf;
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+.footer-links{
+
+    margin:25px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:gold;
+
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#888;
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌎 World Currency Museum</h1>
+<p>Explore the History of World Bnknotes & Coins</p>
+</header>
+
+<div class="search-box">
+<input type="text" id="search" placeholder="Search by country or currency...">
+<button onclick="searchCountry()">Search</button>
+</div>
+
+<div class="container" id="countryList">
+
+
+</div>
+
+</div>
+<p id="noResult" style="text-align: center; display: none; margin-top: 20px;">
+    ❌ No countries found
+</p>
+<div class="menu">
+
+    <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+
+    <div id="menuList" class="menu-list hidden">
+
+        <a href="login.html" id="accountLink">🔐 Login</a>
+
+        <a href="all-countries.html">🌍 All Countries</a>
+
+        <a href="favorites.html">❤️ Favorites</a>
+        
+        
+
+    </div>
+
+</div>
+
+<script src="js/app.js">
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase.js"></script>
+<script src="auth.js"></script>
+
+
+
+<footer class="footer">
+
+    <h2>WORLD CURRENCY MUSEUM</h2>
+
+    <p>
+        Explore the history of world currencies and banknotes.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="all-countries.html">Countries</a>
+
+        <a href="favorites.html">Favorites</a>
+
+        <a href="my-collection.html">My Collection</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 World Currency Museum • Made with ❤️ by Sheikh Ruhan
+    </p>
+
+</footer>
+
+</body>
+</html>

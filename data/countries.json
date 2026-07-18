@@ -1,0 +1,131 @@
+[
+  {
+    "country": "Bangladesh",
+    "flag": "🇧🇩",
+    "currency":"Taka"
+  },
+  {
+    "country": "China",
+    "flag": "🇨🇳",
+    "currency": "Renminbi (Yuan)"
+  },
+  {
+    "country": "Japan",
+    "flag": "🇯🇵",
+    "currency":"Yen"
+  },
+  {
+    "country": "United States",
+    "flag": "🇺🇸",
+    "currency":"Dollar"
+  },
+  {
+    "country": "India",
+    "flag": "🇮🇳",
+    "currency": "Rupee"
+  },
+  {
+    "country":"Turkey",
+    "flag":"🇹🇷",
+    "currency": "Lira"
+  },
+  {
+    "country":"Russia",
+    "flag":"🇷🇺",
+    "currency":"ruble"  
+  },
+  {
+    "country":"Thailand",
+    "flag":"🇹🇭",
+    "currency":"bhat"
+  },
+    {
+    "country":"Vietnam",
+    "flag":"🇻🇳",
+    "currency":"Dong"  
+  },
+
+  {
+    "country":"Myanmar",
+    "flag":"🇲🇲",
+    "currency":"Kyat"
+  },
+  {
+    "country":"Argentina",
+    "flag":"🇦🇷",
+    "currency":"Peso"
+  },
+   {
+    "country":"Singpaore",
+    "flag":"🇸🇬",
+    "currency":"Dollar"
+  },
+     {
+    "country":"Malaysia",
+    "flag":"🇲🇾",
+    "currency":"Ringgit"
+  },
+     {
+    "country":"Indonesia",
+    "flag":"🇮🇩",
+    "currency":"Rupiah"
+  },
+     {
+    "country":"Taiwan",
+    "flag":"🇹🇼",
+    "currency":"Dollar"
+  },
+     {
+    "country":"Nigeria",
+    "flag":"🇳🇬",
+    "currency":"Naira"
+  },
+     {
+    "country":"South africa",
+    "flag":"🇿🇦",
+    "currency":"Rand"
+  },
+     {
+    "country":"Mexico",
+    "flag":"🇲🇽",
+    "currency":"Peso"
+  },
+     {
+    "country":"Canada",
+    "flag":"🇨🇦",
+    "currency":"Dollar"
+  },
+     {
+    "country":"Brazil",
+    "flag":"🇧🇷",
+    "currency":"Real"
+  },
+     {
+    "country":"Colombia",
+    "flag":"🇨🇴",
+    "currency":"Peso"
+  },
+     {
+    "country":"Algeria",
+    "flag":"🇩🇿",
+    "currency":"Dinar"
+  },
+     {
+    "country":"Morocco",
+    "flag":"🇲🇦",
+    "currency":"Dirham"
+  },
+     {
+    "country":"Australia",
+    "flag":"🇦🇺",
+    "currency":"Dollar"
+  },
+     {
+    "country":"Saudi Arabia",
+    "flag":"🇸🇦",
+    "currency":"Riyal"
+  }
+
+
+
+]

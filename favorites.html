@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Favorites</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+
+    --bg:#0f0f0f;
+
+    --card:#1A1A1A;
+
+    --gold:#C8A54B;
+
+    --gold-light:#E7C56B;
+
+    --text:#F5F5F5;
+
+    --border:rgba(200,165,75,.25);
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:'Inter',sans-serif;
+
+}
+
+body{
+
+  background: 
+  linear-gradient(rgba(0,0,0,.82),rgba(0,0,0,.82)),
+  url("https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg");
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    color:var(--text);
+
+    padding:20px;
+
+}
+
+h1{
+
+    text-align:center;
+
+    font-family:'Cinzel',serif;
+
+    color:var(--gold);
+
+    margin-bottom:40px;
+
+    letter-spacing:3px;
+
+}
+
+#favoritesList{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+}
+
+.favorite-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.3s;
+    width: 200px;
+
+}
+
+.favorite-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+.favorite-card h3{
+
+    color:var(--gold);
+
+    margin-bottom:12px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+.favorite-card p{
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+}
+
+.favorite-card button{
+
+    background:var(--gold);
+
+    color:#111;
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.favorite-card button:hover{
+
+    background:var(--gold-light);
+
+}
+
+.empty{
+
+    text-align:center;
+
+    font-size:24px;
+
+    margin-top:120px;
+
+}
+.favorite-image{
+
+    width:100%;
+
+    max-width:220px;
+
+    border-radius:8px;
+
+    margin-bottom:15px;
+
+    transition:.3s;
+
+}
+
+.favorite-image:hover{
+
+    transform:scale(1.04);
+
+}
+.menu{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+    padding: 8px;
+    border-radius: 10px;
+}
+.menu-btn:hover{
+    background: rgba(255,255,255,.08);
+}
+
+.menu-list{
+    position:absolute;
+    right:0;
+    top:45px;
+
+    background:var(--card);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(15px);
+
+    border-radius:10px;
+
+    min-width:180px;
+
+    overflow:hidden;
+}
+
+.menu-list a{
+    display:block;
+
+    padding:12px;
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.menu-list a:hover{
+    background:#333;
+}
+
+.hidden{
+    display:none;
+}
+
+
+.footer{
+
+    margin-top:80px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.footer h2{
+
+    color:gold;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.footer p{
+
+    color:#cfcfcf;
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+.footer-links{
+
+    margin:25px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:gold;
+
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#888;
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>❤️ Favorite Notes</h1>
+
+<p style="text-align:center;color:#bbb;margin-top:-20px;margin-bottom:40px;">
+
+Your personal currency collection
+
+</p>
+
+</header>
+
+<div id="favoritesList"></div>
+
+<div class="menu">
+
+    <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+
+    <div id="menuList" class="menu-list hidden">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="all-countries.html">🌍 All Countries</a>
+
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase.js"></script>
+
+<script src="favorites.js"></script>
+
+<footer class="footer">
+
+    <h2>WORLD CURRENCY MUSEUM</h2>
+
+    <p>
+        Explore the history of world currencies and banknotes.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="all-countries.html">Countries</a>
+
+        <a href="favorites.html">Favorites</a>
+
+        <a href="my-collection.html">My Collection</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 World Currency Museum • Made with ❤️ by Sheikh Ruhan
+    </p>
+
+</footer>
+
+</body>
+</html>

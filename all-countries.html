@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>All Countries</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#111;
+    color:white;
+    padding:30px;
+}
+
+.logo{
+    text-decoration:none;
+    color:gold;
+    font-size:30px;
+    font-weight:bold;
+}
+
+h1{
+    margin:30px 0;
+}
+
+#countries{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+.country-card{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.country-card:hover{
+
+    transform:translateY(-5px);
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.country-card img{
+
+    width:90px;
+
+    margin-bottom:15px;
+
+}
+
+.country-card h2{
+
+    font-size:24px;
+
+}
+
+.country-card p{
+
+    margin-top:10px;
+
+    color:#ccc;
+
+}
+.menu{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.menu-list{
+    position:absolute;
+    right:0;
+    top:45px;
+
+    background:#222;
+
+    border-radius:10px;
+
+    min-width:180px;
+
+    overflow:hidden;
+}
+
+.menu-list a{
+    display:block;
+
+    padding:12px;
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.menu-list a:hover{
+    background:#333;
+}
+
+.hidden{
+    display:none;
+}
+
+.footer{
+
+    margin-top:80px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.footer h2{
+
+    color:gold;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.footer p{
+
+    color:#cfcfcf;
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+.footer-links{
+
+    margin:25px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:gold;
+
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#888;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="logo">
+💴 Currency Museum
+</a>
+
+<h1>🌍 All Countries</h1>
+
+<div id="countries"></div>
+<div class="menu">
+
+    <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+
+    <div id="menuList" class="menu-list hidden">
+
+        <a href="index.html">🏠 Home</a>
+
+
+    </div>
+
+</div>
+
+<script src="all-countries.js"></script>
+
+<footer class="footer">
+
+    <h2>WORLD CURRENCY MUSEUM</h2>
+
+    <p>
+        Explore the history of world currencies and banknotes.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="all-countries.html">Countries</a>
+
+        <a href="favorites.html">Favorites</a>
+
+        <a href="my-collection.html">My Collection</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 World Currency Museum • Made with ❤️ by Sheikh Ruhan
+    </p>
+
+</footer>
+
+</body>
+</html>

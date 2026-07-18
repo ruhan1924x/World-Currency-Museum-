@@ -1,0 +1,183 @@
+[
+  {
+    "series": "2025-2026",
+    "notes": [
+      {
+        "id": "bd-2025-5",
+        "value": "5 Taka",
+        "image": "images/bangladesh/5taka.jpg",
+        "backImage": "images/bangladesh/back/5taka-back.jpg"
+      },
+      {
+        "id": "bd-2025-10",
+        "value": "10 Taka",
+        "image": "images/bangladesh/10taka.jpg",
+        "backImage": "images/bangladesh/back/10taka-back.jpg"
+      },
+      {
+        "id": "bd-2025-20",
+        "value": "20 Taka",
+        "image": "images/bangladesh/20taka.jpg",
+        "backImage": "images/bangladesh/back/20-back.jpg"
+
+      },
+      {
+        "id": "bd-2025-50",
+        "value": "50 Taka",
+        "image": "images/bangladesh/50taka.jpg",
+        "backImage": "images/bangladesh/back/50-back.jpg"
+      },
+      {
+        "id": "bd-2025-100",
+        "value": "100 Taka",
+        "image": "images/bangladesh/100taka.jpg",
+        "backImage": "images/bangladesh/back/100-back.jpg"
+
+      },
+      {
+        "id": "bd-2025-500",
+        "value": "500 Taka",
+        "image": "images/bangladesh/500taka.jpg",
+        "backImage": "images/bangladesh/back/500-back.jpg"
+
+      },
+      {
+        "id": "bd-2025-1000",
+        "value": "1000 Taka",
+        "image": "images/bangladesh/1000taka.jpg",
+        "backImage": "images/bangladesh/back/1000-back.jpg"
+
+      }
+    ]
+  },
+
+  {
+    "series": "1972-1973",
+    "notes": [
+      {
+        "id": "bd-1972-1",
+        "value": "1 Taka",
+        "image": "images/bangladesh/1972-1973/1taka.jpg",
+        "backImage": "images/bangladesh/1972-1973/1taka-back.jpg"
+      },
+       {
+        "id": "bd-1972-5",
+        "value": "5 Taka",
+        "image": "images/bangladesh/1972-1973/5taka.jpg",
+        "backImage": "images/bangladesh/1972-1973/5taka-back.jpg"
+      },
+       {
+        "id": "bd-1972-10",
+        "value": "10 Taka",
+        "image": "images/bangladesh/1972-1973/10taka.jpg",
+        "backImage": "images/bangladesh/1972-1973/10taka-back.jpg"
+      },
+       {
+        "id": "bd-1972-100",
+        "value": "100 Taka",
+        "image": "images/bangladesh/1972-1973/100taka.jpg",
+        "backImage": "images/bangladesh/1972-1973/100taka-back.jpg"
+      }
+    ]
+  },
+  {
+    "series":"1973-1976",
+    "notes":[
+        {
+        "id": "bd-1973-1",
+        "value": "1 Taka",
+        "image": "images/bangladesh/1973-1976/1taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/1-back.jpg"
+      },
+      {  
+        "id": "bd-1973-5-R",
+        "value": "5 Taka",
+        "image": "images/bangladesh/1973-1976/5takaR.jpg",
+        "backImage": "images/bangladesh/1973-1976/5takaR-back.jpg"
+      },
+        {
+          "id": "bd-1973-5-L",
+        "value": "5 Taka",
+        "image": "images/bangladesh/1973-1976/5takaL.jpg",
+        "backImage": "images/bangladesh/1973-1976/5takaL-back.jpg"
+      },
+       {
+        "id": "bd-1973-10-R",
+        "value": "10 Taka",
+        "image": "images/bangladesh/1973-1976/10takaR.jpg",
+        "backImage": "images/bangladesh/1973-1976/10takaR-back.jpg"
+        
+      },
+       {
+        "id": "bd-1973-10-L",
+        "value": "10 Taka",
+        "image": "images/bangladesh/1973-1976/10takaL.jpg",
+        "backImage": "images/bangladesh/1973-1976/10takaR-back.jpg"
+      },
+        {
+        "id": "bd-1973-100",
+        "value": "100 Taka",
+        "image": "images/bangladesh/1973-1976/100taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/100takaf -back.jpg"
+        }
+    ]
+  },
+  {
+    "series":"1977-1978",
+    "notes":[
+      
+      {
+        "id": "bd-1977-5",
+        "value": "5 Taka",
+        "image": "images/bangladesh/1977-1978/5taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/5-back.jpg"
+      },
+            {
+        "id": "bd-1977-10",
+        "value": "10 Taka",
+        "image": "images/bangladesh/1977-1978/10taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/10-back.jpg"
+      },
+            {
+        "id": "bd-1977-20",
+        "value": "20 Taka",
+        "image": "images/bangladesh/1977-1978/20taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/20-back.jpg"
+      },
+            {
+        "id": "bd-1977-50",
+        "value": "50 Taka",
+        "image": "images/bangladesh/1977-1978/50taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/50-back.jpg"
+      },
+            {
+        "id": "bd-1977-100",
+        "value": "100 Taka",
+        "image": "images/bangladesh/1977-1978/100taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/100-back.jpg"
+      },
+            {
+        "id": "bd-1977-500",
+        "value": "500 Taka",
+        "image": "images/bangladesh/1977-1978/500taka.jpg",
+        "backImage": "images/bangladesh/1973-1976/500-back.jpg"
+      }
+      
+    ]
+    
+    
+  },
+  {
+    "series":"Unique Ones",
+    "notes":[
+      
+    ]
+
+  }
+  
+
+  
+  
+    
+  
+]

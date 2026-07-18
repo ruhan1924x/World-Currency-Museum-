@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Country Details</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<style>
+body{
+    background:#111;
+    color:white;
+    padding:30px;
+}
+
+/* HERO */
+
+#flag{
+    width:120px;
+    margin-left: auto;
+}
+
+/* TEXT */
+.country-info h1{
+    font-size:80px;
+}
+
+.country-info p{
+    font-size:22px;
+    margin:10px 0;
+}
+
+/* HISTORY */
+.history-box{
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:40px;
+    font-size: 29.5px;
+     border:1px solid rgba(255,255,255,.12);
+
+}
+
+/* BANKNOTES + COINS */
+#banknotes,
+
+#coins{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 90%;
+
+    gap:20px;
+}
+
+.note-card{
+     width: 45%;
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.347);
+    color: var(--gold);
+    border: 1px solid rgba(255,255,255,.12);
+    backdrop-filter: blur(12px);
+
+    
+}
+.coin-card{
+    width: 20%;
+    background:rgba(255,255,255,0.08);
+    padding:15px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.3s;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.347);
+}
+
+.note-card:hover,
+.coin-card:hover{
+    transform:translateY(-8px);
+}
+
+.note-card img{
+    width:100%;
+    max-width: 300px;
+    height: auto;
+    border-right: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
+    border-top: 5px solid #ffffff;
+}
+
+.coin-card img{
+    width:100%;
+    height: auto;
+}
+#history{
+    font-size:29px;
+    line-height: 1.3;
+
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:20px 0;
+    font-size: 20px;
+}
+
+.year-selector{
+    position:relative;
+    background:#222;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.year-list{
+    position:absolute;
+    top:40px;
+    right:0;
+    background:#111;
+    border:1px solid #333;
+    border-radius:8px;
+    width:150px;
+    z-index:10;
+}
+
+.year-list div{
+    padding:10px;
+    cursor:pointer;
+}
+
+.year-list div:hover{
+    background:#333;
+}
+
+.hidden{
+    display:none;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+    z-index: 1000;
+    color: cyan;
+    transition: .3s;
+}
+
+.logo:hover{
+    color: gold;
+    transform: scale(1.05);
+}
+.menu{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.menu-btn{
+    background:none;
+    border:none;
+    color:white;
+    font-size:32px;
+    cursor:pointer;
+    padding: 8px;
+    border-radius: 10px;
+}
+.menu-btn:hover{
+    background: rgba(255, 255, 255,.08);
+}
+.menu-list{
+    position:absolute;
+    right:0;
+    top:45px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(15px);
+
+    overflow:hidden;
+}
+
+.menu-list a{
+    display:block;
+
+    padding:12px;
+
+    color:white;
+
+    text-decoration:none;
+}
+
+.menu-list a:hover{
+    background:#333;
+}
+
+.hidden{
+    display:none;
+}
+@media (min-width: 1024px) {
+
+    #banknotes{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #coins{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .note-card{
+        max-width: 220px;
+    }
+
+    .coin-card{
+        max-width: 140px;
+    }
+}
+body{
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.hero-header{
+
+    text-align:left;
+
+    margin-bottom:50px;
+
+}
+
+.hero-header h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:55px;
+
+    color:var(--gold);
+
+    letter-spacing:4px;
+
+}
+
+
+.year-list div{
+
+    padding:12px;
+
+    cursor:pointer;
+
+    transition:.25s;
+    background: var(--gold);
+
+}
+
+.year-list div:hover{
+
+    background:var(--gold);
+
+    color:gray;
+
+}
+.hidden{
+    display: none;
+}
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    margin-bottom:40px;
+
+    background:rgba(255,255,255,0.08);
+}
+
+
+
+.hero-left{
+
+    flex:1;
+
+}
+
+.hero-right{
+
+    width:220px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+#flag{
+
+    width:180px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+.country-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:gold;
+
+    color:black;
+
+    font-weight:bold;
+
+    font-size: large;
+
+}
+
+.country-info h1,
+#countryName{
+
+    font-size:65px;
+
+    margin:10px 0;
+
+    color:goldenrod;
+
+    letter-spacing:2px;
+
+}
+
+.country-subtitle{
+
+    color:#d8d8d8;
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-stats{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.stat-card{
+
+    min-width:180px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:18px;
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.stat-card span{
+
+    font-size:30px;
+
+}
+
+.stat-card p{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.section-title span{
+
+    font-size:40px;
+
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    color:#FFD700;
+
+}
+
+.history-box{
+background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-left:6px solid gold;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    margin-bottom:50px;
+
+}
+
+#history{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#eeeeee;
+
+    display: -webkit-box;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 2;
+
+    max-height:220px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+#history.expanded{
+
+    max-height:2000px;
+
+        -webkit-line-clamp:unset;
+
+}
+
+.see-more-btn{
+
+    margin-top:20px;
+
+    background:none;
+
+    border:none;
+
+    color:goldenrod;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.see-more-btn:hover{
+
+    color:gold;
+
+}
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:45px 0 25px;
+
+}
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.section-title span{
+
+    font-size:38px;
+
+}
+
+.section-title h2{
+
+    margin:0;
+
+    font-size:36px;
+
+    color:gold;
+
+    letter-spacing:1px;
+
+}
+
+.year-selector{
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    padding:12px 18px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+.year-selector:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.footer{
+
+    margin-top:80px;
+
+    padding:45px 20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.footer h2{
+
+    color:gold;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.footer p{
+
+    color:#cfcfcf;
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+.footer-links{
+
+    margin:25px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:gold;
+
+}
+
+.copyright{
+
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#888;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+    <div class="hero-left">
+
+        <span class="country-tag">
+            <a href="index.html" class="country-tag">WORLD CURRENCY MUSEUM</a>
+        </span>
+
+        <h1 id="countryName"></h1>
+
+        <p class="country-subtitle">
+            Explore the history and evolution of this nation's currency.
+        </p>
+
+        <div class="hero-stats">
+
+            <div class="stat-card">
+                <span>💴</span>
+                <p id="currency"></p>
+            </div>
+
+            <div class="stat-card">
+                <span>🏛</span>
+                <p id="capital"></p>
+            </div>
+
+            <div class="stat-card">
+                <span>💰</span>
+                <p id="largestNote"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img id="flag">
+
+    </div>
+
+</div>
+
+<div class="history-box">
+
+    <div class="section-title">
+
+        <span>📜</span>
+
+        <h2>History</h2>
+
+    </div>
+
+    <p id="history"></p>
+
+    <button
+        id="historyBtn"
+        class="see-more-btn"
+        onclick="toggleText('history')">
+
+        ▼ See More
+
+    </button>
+
+</div>
+
+<div class="section-header">
+
+    <div class="section-title">
+
+        <span>💴</span>
+
+        <h2>Banknotes</h2>
+
+    </div>
+
+    <div class="year-selector" onclick="toggleYears()">
+
+        <span id="selectedYear">2025–2026 ▼</span>
+
+        <div id="yearList" class="year-list hidden"></div>
+
+    </div>
+
+</div>
+
+<div id="banknotes"></div>
+
+<br><br>
+
+<div class="section-title">
+
+    <span>🪙</span>
+
+    <h2>Coins</h2>
+
+</div>
+
+<div id="coins"></div>
+<div class="menu">
+
+    <button class="menu-btn" onclick="toggleMenu()">⋮</button>
+
+    <div id="menuList" class="menu-list hidden">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="all-countries.html">🌍 All Countries</a>
+
+        <a href="favorites.html">❤️ Favorites</a>
+
+
+    </div>
+
+</div>
+
+<script src="country.js"></script>
+
+<footer class="footer">
+
+    <h2>WORLD CURRENCY MUSEUM</h2>
+
+    <p>
+        Explore the history of world currencies and banknotes.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="all-countries.html">Countries</a>
+
+        <a href="favorites.html">Favorites</a>
+
+        <a href="my-collection.html">My Collection</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 World Currency Museum • Made with ❤️ by Sheikh Ruhan
+    </p>
+
+</footer>
+
+</body>
+</html>

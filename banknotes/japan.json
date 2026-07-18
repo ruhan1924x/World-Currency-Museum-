@@ -1,0 +1,31 @@
+[
+  {
+    "series": "2025-2026",
+    "notes": [
+      {
+        "id": "jp-1000yen-2026",
+        "value": "1000 yen",
+        "image": "images/japan/1000yen.jpg",
+        "backImage": "images/japan/back/1000yen-back.jpg"
+      },
+           {
+        "id": "jp-2000yen-2026",
+        "image": "images/japan/2000yen.jpg",
+        "value": "2000 yen",
+        "backImage": ""
+      },
+            {
+        "id": "jp-5000yen-2026",
+        "image": "images/japan/5000yen.jpg",
+        "value": "5000 yen",
+        "backImage": ""
+      },
+            {
+        "id": "jp-10000yen-2026",
+        "image": "images/japan/10000yen.jpg",
+        "value": "10000 yen",
+        "backImage": ""
+      } 
+    ]
+  }
+]
